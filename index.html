@@ -59,7 +59,10 @@
                 return;
             }
 
-            var output = num1a + (num2a/3);
+            var unroundedoutput = num1a + (num2a/3);
+
+            var output = Math.ceil(unroundedOutput);
+
 
 
             // Display the output
