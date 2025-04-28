@@ -29,16 +29,18 @@
     </style>
 </head>
 <body>
-    <h1>Equation Calculator</h1>
+    <h1>Torment of Hailfire Calculator</h1>
+    <h1>X=L+(C/3)</h1>
+
 
     <div>
-        <label for="num1">Enter Number 1:</label>
-        <input type="number" id="num1">
+        <label for="num1">Player A Life:</label>
+        <input type="number" id="num1a">
     </div>
 
     <div>
-        <label for="num2">Enter Number 2:</label>
-        <input type="number" id="num2">
+        <label for="num2">Player A Count:</label>
+        <input type="number" id="num2a">
     </div>
 
     <button onclick="calculateEquation()">Calculate</button>
@@ -57,17 +59,8 @@
                 return;
             }
 
-            // **Define your equation here:**
-            // Replace the following line with the equation you want to use.
-            // Here's an example for a simple addition:
-            var output = num1 + num2;
+            var output = num1a + (num2a/3);
 
-            // Here are a few other examples you can use (uncomment the one you want):
-            // var output = num1 * num2; // Multiplication
-            // var output = num1 / num2; // Division
-            // var output = num1 - num2; // Subtraction
-            // var output = Math.pow(num1, num2); // num1 raised to the power of num2
-            // var output = (num1 + num2) * 5; // More complex example
 
             // Display the output
             document.getElementById('result').textContent = 'Result: ' + output;
