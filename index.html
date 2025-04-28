@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equation Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        input[type="number"] {
+            padding: 8px;
+            margin: 5px;
+            width: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equation Calculator</h1>
+
+    <div>
+        <label for="num1">Enter Number 1:</label>
+        <input type="number" id="num1">
+    </div>
+
+    <div>
+        <label for="num2">Enter Number 2:</label>
+        <input type="number" id="num2">
+    </div>
+
+    <button onclick="calculateEquation()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateEquation() {
+            // Get the values from the input fields
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Check if the inputs are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers.';
+                return;
+            }
+
+            // **Define your equation here:**
+            // Replace the following line with the equation you want to use.
+            // Here's an example for a simple addition:
+            var output = num1 + num2;
+
+            // Here are a few other examples you can use (uncomment the one you want):
+            // var output = num1 * num2; // Multiplication
+            // var output = num1 / num2; // Division
+            // var output = num1 - num2; // Subtraction
+            // var output = Math.pow(num1, num2); // num1 raised to the power of num2
+            // var output = (num1 + num2) * 5; // More complex example
+
+            // Display the output
+            document.getElementById('result').textContent = 'Result: ' + output;
+        }
+    </script>
+</body>
+</html>
