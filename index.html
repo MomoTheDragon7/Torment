@@ -30,7 +30,7 @@
 </head>
 <body>
     <h1>Torment of Hailfire Calculator</h1>
-    <h1>X=L+(C/3)</h1>
+    <h1>X=(L/3)+C</h1>
 
 
     <div>
@@ -59,7 +59,7 @@
                 return;
             }
 
-            var unroundedoutput = num1a + (num2a/3);
+            var unroundedoutput = (num1a/3) + num2a;
 
             var output = Math.ceil(unroundedOutput);
 
