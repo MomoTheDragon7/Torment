@@ -50,11 +50,11 @@
     <script>
         function calculateEquation() {
             // Get the values from the input fields
-            var num1 = parseFloat(document.getElementById('num1').value);
-            var num2 = parseFloat(document.getElementById('num2').value);
+            var num1 = parseFloat(document.getElementById('num1a').value);
+            var num2 = parseFloat(document.getElementById('num2a').value);
 
             // Check if the inputs are valid numbers
-            if (isNaN(num1) || isNaN(num2)) {
+            if (isNaN(num1a) || isNaN(num2a)) {
                 document.getElementById('result').textContent = 'Please enter valid numbers.';
                 return;
             }
